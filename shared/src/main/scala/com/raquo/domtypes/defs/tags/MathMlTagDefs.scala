@@ -13,7 +13,7 @@ object MathMlTagDefs {
         domName = "math",
         isVoid = false,
         scalaJsElementTypeAlias = "dom.mathml.Math",
-        javascriptElementType = "MathMLElement",
+        javascriptElementType = "HTMLElement",
         commentLines = List(
           "The top-level element in MathML, representing a mathematical expression.",
         ),
@@ -28,7 +28,7 @@ object MathMlTagDefs {
         domName = "mi",
         isVoid = false,
         scalaJsElementTypeAlias = "dom.mathml.Mi",
-        javascriptElementType = "MathMLElement",
+        javascriptElementType = "HTMLElement",
         commentLines = List(
           "Represents a mathematical identifier, such as a variable name.",
         ),
@@ -43,7 +43,7 @@ object MathMlTagDefs {
         domName = "mo",
         isVoid = false,
         scalaJsElementTypeAlias = "dom.mathml.Mo",
-        javascriptElementType = "MathMLElement",
+        javascriptElementType = "HTMLElement",
         commentLines = List(
           "Represents a mathematical operator.",
         ),
@@ -58,7 +58,7 @@ object MathMlTagDefs {
         domName = "mn",
         isVoid = false,
         scalaJsElementTypeAlias = "dom.mathml.Mn",
-        javascriptElementType = "MathMLElement",
+        javascriptElementType = "HTMLElement",
         commentLines = List(
           "Represents a number in a mathematical expression.",
         ),
@@ -73,7 +73,7 @@ object MathMlTagDefs {
         domName = "msup",
         isVoid = false,
         scalaJsElementTypeAlias = "dom.mathml.Msup",
-        javascriptElementType = "MathMLElement",
+        javascriptElementType = "HTMLElement",
         commentLines = List(
           "Represents a superscript expression.",
         ),
@@ -88,7 +88,7 @@ object MathMlTagDefs {
         domName = "msub",
         isVoid = false,
         scalaJsElementTypeAlias = "dom.mathml.Msub",
-        javascriptElementType = "MathMLElement",
+        javascriptElementType = "HTMLElement",
         commentLines = List(
           "Represents a subscript expression.",
         ),
@@ -104,7 +104,7 @@ object MathMlTagDefs {
         domName = "mfrac",
         isVoid = false,
         scalaJsElementTypeAlias = "dom.mathml.Mfrac",
-        javascriptElementType = "MathMLElement",
+        javascriptElementType = "HTMLElement",
         commentLines = List(
           "Represents a fraction.",
         ),
@@ -119,7 +119,7 @@ object MathMlTagDefs {
         domName = "msqrt",
         isVoid = false,
         scalaJsElementTypeAlias = "dom.mathml.Msqrt",
-        javascriptElementType = "MathMLElement",
+        javascriptElementType = "HTMLElement",
         commentLines = List(
           "Represents a square root.",
         ),
@@ -134,7 +134,7 @@ object MathMlTagDefs {
         domName = "mroot",
         isVoid = false,
         scalaJsElementTypeAlias = "dom.mathml.Mroot",
-        javascriptElementType = "MathMLElement",
+        javascriptElementType = "HTMLElement",
         commentLines = List(
           "Represents a root expression with a specified degree.",
         ),
@@ -149,7 +149,7 @@ object MathMlTagDefs {
         domName = "mtext",
         isVoid = false,
         scalaJsElementTypeAlias = "dom.mathml.Mtext",
-        javascriptElementType = "MathMLElement",
+        javascriptElementType = "HTMLElement",
         commentLines = List(
           "Represents text within a mathematical expression.",
         ),
