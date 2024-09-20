@@ -90,6 +90,31 @@ class GeneratorSpec extends AnyFunSpec with Matchers {
     )
   }
 
+  it("Generate MathMl tags") {
+    println("=== MATHML TAGS ===")
+
+    val traitName = "MathMlTags"
+
+    val fileContent = generator.generateTagsTrait(
+      tagType = MathMlTagType,
+      defGroups = defGroups.mathMlTagsDefGroups,
+      printDefGroupComments = false,
+      traitCommentLines = Nil,
+      traitModifiers = Nil,
+      traitName = traitName,
+      keyKind = "SvgTag",
+      baseImplDefComments = Nil,
+      keyImplName = "mathTag",
+      defType = LazyVal
+    )
+
+    generator.writeToFile(
+      packagePath = generator.tagDefsPackagePath,
+      fileName = traitName,
+      fileContent = fileContent
+    )
+  }
+
   it("Generate HTML attributes ") {
     println("=== HTML ATTRS ===")
 
