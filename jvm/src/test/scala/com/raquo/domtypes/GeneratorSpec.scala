@@ -104,7 +104,7 @@ class GeneratorSpec extends AnyFunSpec with Matchers {
       traitName = traitName,
       keyKind = "MathTag",
       baseImplDefComments = Nil,
-      keyImplName = "mathTag",
+      keyImplName = "mathMLTag",
       defType = LazyVal
     )
 
