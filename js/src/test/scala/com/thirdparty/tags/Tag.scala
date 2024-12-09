@@ -15,6 +15,6 @@ case class SvgTag[El <: dom.svg.Element](
   override val domName: String
 ) extends Tag[El]
 
-case class MathTag[El <: dom.html.Element](
+case class MathTag[El <: dom.html.MathMLElement](
   override val domName: String
 ) extends Tag[El]
