@@ -11,7 +11,7 @@ import org.scalajs.dom
 trait MathMLTags {
 
 
-  inline def mathMLTag[El <: dom.MathMLElement](name: String): MathTag[El] = new MathTag(name)
+  def mathMLTag[El <: dom.MathMLElement](name: String): MathTag[El] = new MathTag(name)
 
 
   /**
