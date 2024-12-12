@@ -89,6 +89,8 @@ class CanonicalGenerator(
 
   def baseScalaJsHtmlElementType: String = "dom.html.Element"
 
+  def baseScalaJsMathMlElementType: String = "dom.MathMLElement"
+
   def baseScalaJsSvgElementType: String = "dom.svg.Element"
 
   def scalaJsElementTypeParam: String = "El"
@@ -174,7 +176,7 @@ class CanonicalGenerator(
       )
     } else if (tagType == MathMLTagType) {
       List(
-        s"def ${keyImplName}[$scalaJsElementTypeParam <: $baseScalaJsHtmlElementType]($keyImplNameArgName: String): ${keyKind}[$scalaJsElementTypeParam] = ${keyKindConstructor(keyKind)}($keyImplNameArgName)",
+        s"def ${keyImplName}[$scalaJsElementTypeParam <: $baseScalaJsMathMlElementType]($keyImplNameArgName: String): ${keyKind}[$scalaJsElementTypeParam] = ${keyKindConstructor(keyKind)}($keyImplNameArgName)",
       )
     } else {
       ???

@@ -1,6 +1,7 @@
 package com.thirdparty.tags
 
 import org.scalajs.dom
+import org.scalajs.dom.MathMLElement
 
 trait Tag[El <: dom.Element] {
   val domName: String
@@ -15,6 +16,6 @@ case class SvgTag[El <: dom.svg.Element](
   override val domName: String
 ) extends Tag[El]
 
-case class MathTag[El <: dom.html.MathMLElement](
+case class MathTag[El <: MathMLElement](
   override val domName: String
-) extends Tag[El]
+) extends Tag[org.scalajs.dom.MathMLElement]
