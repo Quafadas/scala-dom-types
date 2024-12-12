@@ -11,7 +11,7 @@ import org.scalajs.dom
 trait MathMLTags {
 
 
-  def mathMLTag[El <: dom.MathMLElement](name: String): MathTag[El] = new MathTag(name)
+  inline def mathMLTag[El <: dom.MathMLElement](name: String): MathTag[El] = new MathTag(name)
 
 
   /**
@@ -148,6 +148,14 @@ trait MathMLTags {
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mspace mspace @ MDN]]
     */
   lazy val mspace: MathTag[dom.MathMLElement] = mathMLTag("mspace")
+
+
+  /**
+    * Represents a string literal.
+    * 
+    * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms ms @ MDN]]
+    */
+  lazy val ms: MathTag[dom.MathMLElement] = mathMLTag("ms")
 
 
 }
