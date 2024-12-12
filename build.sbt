@@ -2,6 +2,8 @@ import VersionHelper.{versionFmt, fallbackVersion}
 
 // Lets me depend on Maven Central artifacts immediately without waiting
 resolvers ++= Resolver.sonatypeOssRepos("public")
+resolvers ++= Resolver.sonatypeOssRepos("snapshots")
+resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 
 // Makes sure to increment the version for local development
 ThisBuild / version := dynverGitDescribeOutput.value
@@ -14,7 +16,7 @@ ThisBuild / dynver := {
     .mkVersion(out => versionFmt(out, dynverSonatypeSnapshots.value), fallbackVersion(d))
 }
 
-(ThisBuild / scalaVersion) := Versions.Scala_2_12
+(ThisBuild / scalaVersion) := Versions.Scala_3
 
 (ThisBuild / crossScalaVersions) := Seq(
   Versions.Scala_3,
