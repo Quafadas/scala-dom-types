@@ -176,7 +176,7 @@ class CanonicalGenerator(
       )
     } else if (tagType == MathMLTagType) {
       List(
-        s"inline def ${keyImplName}[$scalaJsElementTypeParam <: $baseScalaJsMathMlElementType]($keyImplNameArgName: String): ${keyKind}[$scalaJsElementTypeParam] = ${keyKindConstructor(keyKind)}($keyImplNameArgName)",
+        s"def ${keyImplName}[$scalaJsElementTypeParam <: $baseScalaJsMathMlElementType]($keyImplNameArgName: String): ${keyKind}[$scalaJsElementTypeParam] = ${keyKindConstructor(keyKind)}($keyImplNameArgName)",
       )
     } else {
       ???
