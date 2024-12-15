@@ -18,7 +18,7 @@ ThisBuild / dynver := {
 
 }
 
-(ThisBuild / scalaVersion) := Versions.Scala_3
+(ThisBuild / scalaVersion) := Versions.Scala_2_12
 
 (ThisBuild / crossScalaVersions) := Seq(
   Versions.Scala_3,

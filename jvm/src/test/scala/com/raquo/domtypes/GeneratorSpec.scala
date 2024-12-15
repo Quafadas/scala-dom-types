@@ -93,7 +93,7 @@ class GeneratorSpec extends AnyFunSpec with Matchers {
   it("Generate MathMl tags") {
     println("=== MATHML TAGS ===")
 
-    val traitName = "MathMLTags"
+    val traitName = "MathMlTags"
 
     val fileContent = generator.generateTagsTrait(
       tagType = MathMLTagType,
@@ -104,7 +104,7 @@ class GeneratorSpec extends AnyFunSpec with Matchers {
       traitName = traitName,
       keyKind = "MathTag",
       baseImplDefComments = Nil,
-      keyImplName = "mathMLTag",
+      keyImplName = "mathMlTag",
       defType = LazyVal
     )
 
