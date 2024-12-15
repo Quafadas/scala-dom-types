@@ -174,7 +174,7 @@ class CanonicalGenerator(
       List(
         s"def ${keyImplName}[$scalaJsElementTypeParam <: $baseScalaJsSvgElementType]($keyImplNameArgName: String): ${keyKind}[$scalaJsElementTypeParam] = ${keyKindConstructor(keyKind)}($keyImplNameArgName)",
       )
-    } else if (tagType == MathMLTagType) {
+    } else if (tagType == MathMlTagType) {
       List(
         s"def ${keyImplName}[$scalaJsElementTypeParam <: $baseScalaJsMathMlElementType]($keyImplNameArgName: String): ${keyKind}[$scalaJsElementTypeParam] = ${keyKindConstructor(keyKind)}($keyImplNameArgName)",
       )

@@ -1,6 +1,6 @@
 package com.raquo.domtypes.defs.attrs
 
-import com.raquo.domtypes.common.{MathMLTagType, TagDef}
+import com.raquo.domtypes.common.{MathMlTagType, TagDef}
 
 
 object MathMLTagDefs {
@@ -8,7 +8,7 @@ object MathMLTagDefs {
   val defs: List[TagDef] = List(
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "annotation",
       domName = "annotation",
       isVoid = false,
@@ -23,7 +23,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mathTag",
       domName = "math",
       isVoid = false,
@@ -38,7 +38,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "merror",
       domName = "merror",
       isVoid = false,
@@ -53,7 +53,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mfrac",
       domName = "mfrac",
       isVoid = false,
@@ -68,7 +68,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mi",
       domName = "mi",
       isVoid = false,
@@ -83,7 +83,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mmultiscripts",
       domName = "mmultiscripts",
       isVoid = false,
@@ -98,7 +98,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mn",
       domName = "mn",
       isVoid = false,
@@ -113,7 +113,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mo",
       domName = "mo",
       isVoid = false,
@@ -129,7 +129,7 @@ object MathMLTagDefs {
 
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mover",
       domName = "mover",
       isVoid = false,
@@ -145,7 +145,7 @@ object MathMLTagDefs {
 
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mphantom",
       domName = "mphantom",
       isVoid = false,
@@ -160,7 +160,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mprescripts",
       domName = "mprescripts",
       isVoid = false,
@@ -175,7 +175,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mroot",
       domName = "mroot",
       isVoid = false,
@@ -190,7 +190,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mrow",
       domName = "mrow",
       isVoid = false,
@@ -205,7 +205,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "ms",
       domName = "ms",
       isVoid = false,
@@ -220,7 +220,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mspace",
       domName = "mspace",
       isVoid = false,
@@ -235,7 +235,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "msqrt",
       domName = "msqrt",
       isVoid = false,
@@ -251,7 +251,7 @@ object MathMLTagDefs {
 
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mstyle",
       domName = "mstyle",
       isVoid = false,
@@ -266,7 +266,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "msub",
       domName = "msub",
       isVoid = false,
@@ -281,7 +281,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "msubsup",
       domName = "msubsup",
       isVoid = false,
@@ -296,7 +296,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "msup",
       domName = "msup",
       isVoid = false,
@@ -312,7 +312,7 @@ object MathMLTagDefs {
 
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mtable",
       domName = "mtable",
       isVoid = false,
@@ -327,7 +327,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mtd",
       domName = "mtd",
       isVoid = false,
@@ -342,7 +342,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mtext",
       domName = "mtext",
       isVoid = false,
@@ -357,7 +357,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "mtr",
       domName = "mtr",
       isVoid = false,
@@ -373,7 +373,7 @@ object MathMLTagDefs {
 
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "munder",
       domName = "munder",
       isVoid = false,
@@ -388,7 +388,7 @@ object MathMLTagDefs {
     ),
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "munderover",
       domName = "munderover",
       isVoid = false,
@@ -405,7 +405,7 @@ object MathMLTagDefs {
 
 
     TagDef(
-      tagType = MathMLTagType,
+      tagType = MathMlTagType,
       scalaName = "semantics",
       domName = "semantics",
       isVoid = false,

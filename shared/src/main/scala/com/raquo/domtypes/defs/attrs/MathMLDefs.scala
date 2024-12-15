@@ -1,6 +1,6 @@
 package com.raquo.domtypes.defs.attrs
 
-import com.raquo.domtypes.common.MathMLTagType
+import com.raquo.domtypes.common.MathMlTagType
 import com.raquo.domtypes.common.AttrDef
 
 object MathMlAttrDefs {
