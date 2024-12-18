@@ -8,7 +8,7 @@ import org.scalajs.dom
 //  - See `GeneratorSpec.scala` for code generation params
 //  - Contribute to https://github.com/raquo/scala-dom-types to add missing tags / attrs / props / etc.
 
-trait MathMlTags {
+trait MathMLTags {
 
 
   def mathMlTag[El <: dom.MathMLElement](name: String): MathMlTag[El] = new MathMlTag(name)

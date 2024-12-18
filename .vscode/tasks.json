@@ -4,7 +4,7 @@
     {
       "label": "Run sbt",
       "type": "shell",
-      "command": "sbt",
+      "command": "cs launch sbt --jvm 11",
       "presentation": {
         "reveal": "always",
         "panel": "new"
