@@ -26,7 +26,7 @@ class CanonicalDefGroups {
   )
 
   val mathMlTagsDefGroups: List[(String, List[TagDef])] = List(
-    "MathMl Tags" -> MathMLTagDefs.defs,
+    "MathMl Tags" -> MathMlTagDefs.defs,
   )
 
   val htmlAttrDefGroups: List[(String, List[AttrDef])] = List(

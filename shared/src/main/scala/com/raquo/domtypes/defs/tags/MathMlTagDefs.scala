@@ -3,7 +3,7 @@ package com.raquo.domtypes.defs.attrs
 import com.raquo.domtypes.common.{MathMlTagType, TagDef}
 
 
-object MathMLTagDefs {
+object MathMlTagDefs {
 
   val defs: List[TagDef] = List(
 
