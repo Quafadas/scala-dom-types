@@ -10,12 +10,13 @@ import org.scalajs.dom
 
 trait MathMlTags {
 
+
   def mathMlTag[El <: dom.MathMLElement](name: String): MathMlTag[El] = new MathMlTag(name)
 
 
   /**
     * The <annotation> MathML element is used to include annotations for a MathML expression.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/annotation annotation @ MDN]]
     */
   lazy val annotation: MathMlTag[dom.MathMLElement] = mathMlTag("annotation")
@@ -23,7 +24,7 @@ trait MathMlTags {
 
   /**
     * The top-level element in MathML, representing a mathematical expression.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math math @ MDN]]
     */
   lazy val mathTag: MathMlTag[dom.MathMLElement] = mathMlTag("math")
@@ -31,7 +32,7 @@ trait MathMlTags {
 
   /**
     * The <merror> MathML element is used to display an error message in a mathematical expression.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/merror merror @ MDN]]
     */
   lazy val merror: MathMlTag[dom.MathMLElement] = mathMlTag("merror")
@@ -39,7 +40,7 @@ trait MathMlTags {
 
   /**
     * Represents a fraction.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac mfrac @ MDN]]
     */
   lazy val mfrac: MathMlTag[dom.MathMLElement] = mathMlTag("mfrac")
@@ -47,7 +48,7 @@ trait MathMlTags {
 
   /**
     * Represents a mathematical identifier, such as a variable name.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mi mi @ MDN]]
     */
   lazy val mi: MathMlTag[dom.MathMLElement] = mathMlTag("mi")
@@ -55,7 +56,7 @@ trait MathMlTags {
 
   /**
     * The <mmultiscripts> MathML element allows the specification of prescripts and postscripts to a base.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts mmultiscripts @ MDN]]
     */
   lazy val mmultiscripts: MathMlTag[dom.MathMLElement] = mathMlTag("mmultiscripts")
@@ -63,7 +64,7 @@ trait MathMlTags {
 
   /**
     * Represents a number in a mathematical expression.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mn mn @ MDN]]
     */
   lazy val mn: MathMlTag[dom.MathMLElement] = mathMlTag("mn")
@@ -71,7 +72,7 @@ trait MathMlTags {
 
   /**
     * Represents a mathematical operator.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo mo @ MDN]]
     */
   lazy val mo: MathMlTag[dom.MathMLElement] = mathMlTag("mo")
@@ -79,7 +80,7 @@ trait MathMlTags {
 
   /**
     * The <mover> MathML element is used to attach an accent or a limit over an expression. It uses the following syntax: <mover> base overscript </mover>
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mover mover @ MDN]]
     */
   lazy val mover: MathMlTag[dom.MathMLElement] = mathMlTag("mover")
@@ -87,7 +88,7 @@ trait MathMlTags {
 
   /**
     * The <mphantom> MathML element is used to hide its content, while still affecting the layout of the expression.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mphantom mphantom @ MDN]]
     */
   lazy val mphantom: MathMlTag[dom.MathMLElement] = mathMlTag("mphantom")
@@ -95,7 +96,7 @@ trait MathMlTags {
 
   /**
     * The <mprescripts> MathML element is used to specify prescripts in a <mmultiscripts> element.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mprescripts mprescripts @ MDN]]
     */
   lazy val mprescripts: MathMlTag[dom.MathMLElement] = mathMlTag("mprescripts")
@@ -103,7 +104,7 @@ trait MathMlTags {
 
   /**
     * Represents a root expression with a specified degree.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mroot mroot @ MDN]]
     */
   lazy val mroot: MathMlTag[dom.MathMLElement] = mathMlTag("mroot")
@@ -111,7 +112,7 @@ trait MathMlTags {
 
   /**
     * The <mrow> MathML element is used to group sub-expressions, representing them horizontally.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mrow mrow @ MDN]]
     */
   lazy val mrow: MathMlTag[dom.MathMLElement] = mathMlTag("mrow")
@@ -119,7 +120,7 @@ trait MathMlTags {
 
   /**
     * Represents a string literal.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms ms @ MDN]]
     */
   lazy val ms: MathMlTag[dom.MathMLElement] = mathMlTag("ms")
@@ -127,7 +128,7 @@ trait MathMlTags {
 
   /**
     * The <mspace> MathML element is used to display a blank space, whose size is set by its attributes.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mspace mspace @ MDN]]
     */
   lazy val mspace: MathMlTag[dom.MathMLElement] = mathMlTag("mspace")
@@ -135,7 +136,7 @@ trait MathMlTags {
 
   /**
     * Represents a square root expression.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msqrt msqrt @ MDN]]
     */
   lazy val msqrt: MathMlTag[dom.MathMLElement] = mathMlTag("msqrt")
@@ -143,7 +144,7 @@ trait MathMlTags {
 
   /**
     * The <mstyle> MathML element is used to change the style of its contents. It is similar to the <style> element in HTML.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle mstyle @ MDN]]
     */
   lazy val mstyle: MathMlTag[dom.MathMLElement] = mathMlTag("mstyle")
@@ -151,7 +152,7 @@ trait MathMlTags {
 
   /**
     * Represents a subscript expression.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub msub @ MDN]]
     */
   lazy val msub: MathMlTag[dom.MathMLElement] = mathMlTag("msub")
@@ -159,7 +160,7 @@ trait MathMlTags {
 
   /**
     * Represents a base with both a subscript and a superscript.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup msubsup @ MDN]]
     */
   lazy val msubsup: MathMlTag[dom.MathMLElement] = mathMlTag("msubsup")
@@ -167,7 +168,7 @@ trait MathMlTags {
 
   /**
     * Represents a superscript expression.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msup msup @ MDN]]
     */
   lazy val msup: MathMlTag[dom.MathMLElement] = mathMlTag("msup")
@@ -175,7 +176,7 @@ trait MathMlTags {
 
   /**
     * The <mtable> MathML element allows you to create tables or matrices. Its children are <mtr> elements (representing rows), each of them having <mtd> elements as its children (representing cells). These elements are similar to <table>, <tr> and <td> elements of HTML.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtable mtable @ MDN]]
     */
   lazy val mtable: MathMlTag[dom.MathMLElement] = mathMlTag("mtable")
@@ -183,7 +184,7 @@ trait MathMlTags {
 
   /**
     * The <mtd> MathML element represents a cell in a table or a matrix. It may only appear in an <mtr> element.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtd mtd @ MDN]]
     */
   lazy val mtd: MathMlTag[dom.MathMLElement] = mathMlTag("mtd")
@@ -191,7 +192,7 @@ trait MathMlTags {
 
   /**
     * Represents text within a mathematical expression.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtext mtext @ MDN]]
     */
   lazy val mtext: MathMlTag[dom.MathMLElement] = mathMlTag("mtext")
@@ -199,7 +200,7 @@ trait MathMlTags {
 
   /**
     * The <mtr> MathML element represents a row in a table or a matrix. It may only appear in a <mtable> element and its children are <mtd> elements representing cells. This element is similar to the <tr> element of HTML.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtr mtr @ MDN]]
     */
   lazy val mtr: MathMlTag[dom.MathMLElement] = mathMlTag("mtr")
@@ -207,7 +208,7 @@ trait MathMlTags {
 
   /**
     * The <munder> MathML element is used to attach an accent or a limit under an expression. It uses the following syntax: <munder> base underscript </munder>
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munder munder @ MDN]]
     */
   lazy val munder: MathMlTag[dom.MathMLElement] = mathMlTag("munder")
@@ -215,7 +216,7 @@ trait MathMlTags {
 
   /**
     * The <munder> MathML element is used to attach an accent or a limit under an expression. It uses the following syntax: <munder> base underscript </munder>
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munderover munderover @ MDN]]
     */
   lazy val munderover: MathMlTag[dom.MathMLElement] = mathMlTag("munderover")
@@ -223,7 +224,7 @@ trait MathMlTags {
 
   /**
     * The <semantics> MathML element is used to annotate a MathML expression with additional information, such as its meaning or its presentation.
-    *
+    * 
     * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/semantics semantics @ MDN]]
     */
   lazy val semantics: MathMlTag[dom.MathMLElement] = mathMlTag("semantics")
