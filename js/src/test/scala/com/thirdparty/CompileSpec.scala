@@ -123,6 +123,13 @@ class CompileSpec extends AnyFunSpec with Matchers {
     assert(mathml.mathbackground.domName == "mathbackground")
     assert(mathml.displaystyle.domName == "displaystyle")
     assert(mathml.scriptlevel.domName == "scriptlevel")
+    assert(mathml.xmlns.domName == "xmlns")
+
+    // xmlns attribute available on all element types
+
+    assert(html.xmlns.domName == "xmlns") // HTML xmlns
+    assert(svg.xmlns.domName == "xmlns")  // SVG xmlns
+    assert(mathml.xmlns.domName == "xmlns") // MathML xmlns
 
     // Aliases
 

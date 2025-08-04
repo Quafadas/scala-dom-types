@@ -353,6 +353,22 @@ object MathMLDefs {
       ),
     ),
 
+    AttrDef(
+      tagType = MathMLTagType,
+      scalaName = "xmlns",
+      domName = "xmlns",
+      namespace = None,
+      scalaValueType = "String",
+      codec = "StringAsIs",
+      commentLines = List(
+        "The xmlns attribute specifies the XML namespace for the MathML element.",
+        "For MathML, this should typically be 'http://www.w3.org/1998/Math/MathML'.",
+      ),
+      docUrls = List(
+        "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math#xmlns",
+      ),
+    ),
+
   )
   
 }

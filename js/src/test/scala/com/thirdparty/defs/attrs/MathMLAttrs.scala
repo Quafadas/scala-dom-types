@@ -82,4 +82,12 @@ trait MathMLAttrs {
     */
   lazy val scriptlevel: MathMLAttr[Int] = intMathMLAttr("scriptlevel")
 
+  /**
+    * The xmlns attribute specifies the XML namespace for the MathML element.
+    * For MathML, this should typically be 'http://www.w3.org/1998/Math/MathML'.
+    * 
+    * [[https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math#xmlns xmlns @ MDN]]
+    */
+  lazy val xmlns: MathMLAttr[String] = stringMathMLAttr("xmlns")
+
 }

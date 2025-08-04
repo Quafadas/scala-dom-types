@@ -181,5 +181,14 @@ trait HtmlAttrs {
     */
   lazy val widthAttr: HtmlAttr[Int] = intHtmlAttr("width")
 
+  /**
+    * The xmlns attribute specifies the XML namespace for the element.
+    * This is especially important when mixing HTML with other XML vocabularies
+    * like SVG or MathML.
+    * 
+    * [[https://developer.mozilla.org/en-US/docs/Web/API/Element/namespaceURI namespaceURI @ MDN]]
+    */
+  lazy val xmlns: HtmlAttr[String] = stringHtmlAttr("xmlns")
+
 
 }
