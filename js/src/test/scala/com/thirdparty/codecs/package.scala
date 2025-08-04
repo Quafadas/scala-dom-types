@@ -5,6 +5,7 @@ package object codecs {
   // String Codecs
 
   object StringAsIsCodec extends AsIsCodec[String]
+  val StringAsIs = StringAsIsCodec
 
   // Int Codecs
 
@@ -14,6 +15,7 @@ package object codecs {
     override def decode(domValue: String): Int = domValue.toInt // @TODO this can throw exception. How do we handle this?
     override def encode(scalaValue: Int): String = scalaValue.toString
   }
+  val IntAsString = IntAsStringCodec
 
   // Double Codecs
 
@@ -32,6 +34,7 @@ package object codecs {
     override def decode(domValue: String): Boolean = domValue != null
     override def encode(scalaValue: Boolean): String = if (scalaValue) "" else null
   }
+  val BooleanAsPresence = BooleanAsAttrPresenceCodec
 
   object BooleanAsTrueFalseStringCodec extends Codec[Boolean, String] {
     override def decode(domValue: String): Boolean = domValue == "true"

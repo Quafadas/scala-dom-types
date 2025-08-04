@@ -1,12 +1,12 @@
 package com.thirdparty
 
-import com.thirdparty.defs.attrs.{AriaAttrs, HtmlAttrs, SvgAttrs}
+import com.thirdparty.defs.attrs.{AriaAttrs, HtmlAttrs, SvgAttrs, MathMLAttrs}
 import com.thirdparty.defs.complex.{ComplexHtmlKeys, ComplexSvgKeys}
 import com.thirdparty.defs.eventProps.{DocumentEventProps, GlobalEventProps, WindowEventProps}
 import com.thirdparty.defs.props.Props
 import com.thirdparty.defs.styles.StyleProps
 import com.thirdparty.defs.styles.units.{Calc, Color, Length, Time, Url}
-import com.thirdparty.defs.tags.{HtmlTags, SvgTags}
+import com.thirdparty.defs.tags.{HtmlTags, SvgTags, MathMLTags}
 import com.thirdparty.keys.{DerivedStyleBuilder, DerivedStyleProp, StyleProp, SvgAttr}
 import com.thirdparty.setters.StyleSetter
 import com.thirdparty.tags.HtmlTag
@@ -48,6 +48,10 @@ class CompileSpec extends AnyFunSpec with Matchers {
     extends SvgTags
     with SvgAttrs
     with ComplexSvgKeys
+
+  object mathml
+    extends MathMLTags
+    with MathMLAttrs
 
   object aria
     extends AriaAttrs
@@ -98,6 +102,27 @@ class CompileSpec extends AnyFunSpec with Matchers {
     assert(svg.xlinkHref.namespace.contains("xlink"))
     assert(svg.xlinkHref.qualifiedName == "xlink:href")
     assert(SvgAttr.namespaceUrl(svg.xlinkHref.namespace.get) == "http://www.w3.org/1999/xlink")
+
+    // MathML basic functionality
+
+    assert(mathml.math.domName == "math")
+    assert(mathml.mi.domName == "mi")
+    assert(mathml.mn.domName == "mn")
+    assert(mathml.mo.domName == "mo")
+    assert(mathml.mrow.domName == "mrow")
+    assert(mathml.mfrac.domName == "mfrac")
+    assert(mathml.msup.domName == "msup")
+    assert(mathml.msub.domName == "msub")
+
+    // MathML attributes
+
+    assert(mathml.display.domName == "display")
+    assert(mathml.mathvariant.domName == "mathvariant")
+    assert(mathml.mathsize.domName == "mathsize")
+    assert(mathml.mathcolor.domName == "mathcolor")
+    assert(mathml.mathbackground.domName == "mathbackground")
+    assert(mathml.displaystyle.domName == "displaystyle")
+    assert(mathml.scriptlevel.domName == "scriptlevel")
 
     // Aliases
 

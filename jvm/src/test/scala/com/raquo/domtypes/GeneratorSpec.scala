@@ -2,7 +2,7 @@ package com.raquo.domtypes
 
 import com.raquo.domtypes.codegen.DefType.LazyVal
 import com.raquo.domtypes.codegen._
-import com.raquo.domtypes.common.{HtmlTagType, SvgTagType}
+import com.raquo.domtypes.common.{HtmlTagType, SvgTagType, MathMLTagType}
 import com.raquo.domtypes.defs.styles.StyleTraitDefs
 import org.scalatest.funspec.AnyFunSpec
 import org.scalatest.matchers.should.Matchers
@@ -90,6 +90,31 @@ class GeneratorSpec extends AnyFunSpec with Matchers {
     )
   }
 
+  it("Generate MathML tags") {
+    println("=== MATHML TAGS ===")
+
+    val traitName = "MathMLTags"
+
+    val fileContent = generator.generateTagsTrait(
+      tagType = MathMLTagType,
+      defGroups = defGroups.mathMLTagsDefGroups,
+      printDefGroupComments = false,
+      traitCommentLines = Nil,
+      traitModifiers = Nil,
+      traitName = traitName,
+      keyKind = "MathMLTag",
+      baseImplDefComments = Nil,
+      keyImplName = "mathMLTag",
+      defType = LazyVal
+    )
+
+    generator.writeToFile(
+      packagePath = generator.tagDefsPackagePath,
+      fileName = traitName,
+      fileContent = fileContent
+    )
+  }
+
   it("Generate HTML attributes ") {
     println("=== HTML ATTRS ===")
 
@@ -161,6 +186,34 @@ class GeneratorSpec extends AnyFunSpec with Matchers {
       implNameSuffix = "AriaAttr",
       baseImplDefComments = Nil,
       baseImplName = "ariaAttr",
+      namespaceImports = Nil,
+      namespaceImpl = _ => ???,
+      transformAttrDomName = identity,
+      defType = LazyVal
+    )
+
+    generator.writeToFile(
+      packagePath = generator.attrDefsPackagePath,
+      fileName = traitName,
+      fileContent = fileContent
+    )
+  }
+
+  it("Generate MathML attributes ") {
+    println("=== MATHML ATTRS ===")
+
+    val traitName = "MathMLAttrs"
+
+    val fileContent = generator.generateAttrsTrait(
+      defGroups = defGroups.mathMLAttrDefGroups,
+      printDefGroupComments = false,
+      traitModifiers = Nil,
+      traitName = traitName,
+      traitCommentLines = Nil,
+      keyKind = "MathMLAttr",
+      implNameSuffix = "MathMLAttr",
+      baseImplDefComments = Nil,
+      baseImplName = "mathMLAttr",
       namespaceImports = Nil,
       namespaceImpl = _ => ???,
       transformAttrDomName = identity,
